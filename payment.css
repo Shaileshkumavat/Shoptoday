@@ -1,0 +1,144 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    flex-direction: column; /* Ensure the body is a column flex container */
+}
+
+#payment-options {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Smaller width */
+    text-align: center;
+    margin-bottom: 20px; /* Add some space between payment options and footer */
+}
+
+#payment-options h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.payment-methods {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-option {
+    padding: 8px;
+    margin: 8px 0;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px; /* Smaller font size */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.payment-option:hover {
+    background-color: #218838;
+}
+
+.payment-option i {
+    margin-right: 8px; /* Smaller margin */
+}
+
+/* Footer Styles */
+footer {
+    color: black; /* Change font color to black */
+    padding: 10px 0; /* Sufficient padding for readability */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px; /* Smaller font size for footer content */
+    text-align: center; /* Center-align footer content */
+    background-color: transparent; /* Remove background color */
+}
+
+.footer-section {
+    display: inline-block;
+    margin: 0 10px; /* Sufficient margin for spacing */
+    vertical-align: top;
+}
+
+.footer-section h4 {
+    margin-bottom: 5px; /* Sufficient margin for spacing */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 3px; /* Sufficient margin for spacing */
+}
+
+.footer-section ul li a {
+    color: black; /* Change link color to black */
+    text-decoration: none;
+    font-size: 14px; /* Smaller font size for links */
+}
+
+.app-buttons img {
+    width: 80px; /* Smaller image size */
+    margin-bottom: 5px; /* Sufficient margin for spacing */
+}
+
+.social-icons i {
+    color: black; /* Change social icon color to black */
+    margin: 0 3px; /* Sufficient margin for spacing */
+    font-size: 16px; /* Smaller icon size */
+}
+
+/* Header Styles */
+#header {
+    background-color: #fff;
+    padding: 5px 0; /* Thinner padding */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#navbar {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar li {
+    margin: 0 5px; /* Thinner margin */
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px; /* Smaller font size */
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+}
+
+#navbar .login-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 3px 8px; /* Thinner padding */
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#navbar .login-btn:hover {
+    background-color: #218838;
+}

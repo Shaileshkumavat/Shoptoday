@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Options</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <section id="payment-options">
+        <h2>Choose Your Payment Method</h2>
+        <div class="payment-methods">
+            <button class="payment-option" onclick="redirectToPayment('gpay')">
+                <i class="fab fa-google-pay"></i> Google Pay
+            </button>
+            <button class="payment-option" onclick="redirectToPayment('paytm')">
+                <i class="fab fa-paytm"></i> Paytm
+            </button>
+            <button class="payment-option" onclick="redirectToPayment('phonepe')">
+                <i class="fab fa-phonepe"></i> PhonePe
+            </button>
+            <button class="payment-option" onclick="redirectToPayment('netbanking')">
+                <i class="fas fa-university"></i> Net Banking
+            </button>
+            <button class="payment-option" onclick="redirectToPayment('card')">
+                <i class="fas fa-credit-card"></i> Card Payment
+            </button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <!-- Online Shopping -->
+            <div class="footer-section">
+                <h4>ONLINE SHOPPING</h4>
+                <ul>
+                    <li><a class="active" href="Men.html">Men</a></li>
+                    <li><a class="active" href="women.html">Women</a></li>
+                    <li><a class="active" href="kids.html">kids</a></li>      
+                    <li><a class="active" href="beauty.html">Beauty</a></li>
+                    <li><a class="active" href="giftcards.html">Git Cards</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer Policies -->
+            <div class="footer-section">
+                <h4>CUSTOMER POLICIES</h4>
+                <ul>
+                    <li><a class="active" href="contactus.html">Contact Us</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="T&C.html">T&C</a></li>
+                    <li><a href="track.html">Track Orders</a></li>
+                    <li><a href="ship.html">Shipping</a></li>
+                    <li><a href="cancle.html">Cancellation</a></li>
+                    <li><a href="return.html">Returns</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Useful Links -->
+            <div class="footer-section">
+                <h4>USEFUL LINKS</h4>
+                <ul>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="#">Site Map</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                    <li><a href="#">Whitehat</a></li>
+                </ul>
+            </div>
+
+            <!-- App Downloads & Social Media -->
+            <div class="footer-section">
+                <h4>EXPERIENCE MYNTRA APP ON MOBILE</h4>
+                <div class="app-buttons">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+                </div>
+                <h4>KEEP IN TOUCH</h4>
+                <div class="social-icons"> 
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-pinterest"></i>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+    <script src="payment.js"></script>
+</body>
+</html>

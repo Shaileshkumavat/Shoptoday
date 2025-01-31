@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Cards - My E-Commerce Website</title>
+    <link rel="stylesheet" href="gift-cards.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="beauty.html">Beauty</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="gift-cards-collection">
+        <h1>Gift Cards</h1>
+        <p>Choose from our selection of gift cards for any occasion.</p>
+        <div class="product-grid">
+            <div class="product" onclick="redirectTo('gift-card-1.html')">
+                <img src="images/gift_card_1.jpg" alt="Gift Card 1">
+                <h2>Gift Card $25</h2>
+                <p>Price: $25.00</p>
+                <button onclick="redirectTo('gift-card-1.html')">Add to Cart</button>
+            </div>
+            <div class="product" onclick="redirectTo('gift-card-2.html')">
+                <img src="images/gift_card_2.jpg" alt="Gift Card 2">
+                <h2>Gift Card $50</h2>
+                <p>Price: $50.00</p>
+                <button onclick="redirectTo('gift-card-2.html')">Add to Cart</button>
+            </div>
+            <div class="product" onclick="redirectTo('gift-card-3.html')">
+                <img src="images/gift_card_3.jpg" alt="Gift Card 3">
+                <h2>Gift Card $100</h2>
+                <p>Price: $100.00</p>
+                <button onclick="redirectTo('gift-card-3.html')">Add to Cart</button>
+            </div>
+            <div class="product" onclick="redirectTo('gift-card-4.html')">
+                <img src="images/gift_card_4.jpg" alt="Gift Card 4">
+                <h2>Gift Card $200</h2>
+                <p>Price: $200.00</p>
+                <button onclick="redirectTo('gift-card-4.html')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My E-Commerce Website. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function redirectTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

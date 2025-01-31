@@ -1,0 +1,751 @@
+.section-p1{
+    padding:50px 90px;
+}
+button{
+    font-size: 13px;
+    font-weight:600;
+    padding:12px 40px;
+    color:white;
+    background-color:transparent;
+    cursor:pointer;
+    border:1px solid white;
+    outline: none;
+    transition: 0.2s;
+}
+
+#header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color:white ;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06); 
+    z-index:999;
+    position:sticky;
+    top:0;
+    left:0;
+
+}
+#header a img{
+    width:100px;
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{   
+    text-decoration:none;
+    font-size: 15px;
+    font-weight: 100;
+    color:rgb(12, 13, 13);
+} 
+#navbar li a:hover,
+#navbar li a.active{
+    color: rgb(61, 43, 226);
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content:"" ;
+    width:30%;
+    height:2px;
+    background-color:blueviolet;
+    position: fixed;
+    bottom:-4px;
+    left:20px;
+}
+#navbar li button{
+    color:blue ;
+    border-radius: 90vh;
+    cursor:pointer;
+    text-decoration:none;
+    font-size: 13px;
+    font-weight: 100;
+    color:rgb(12, 13, 13);
+    transition:0.7s ease;
+    border-color: black;
+}
+#navbar li button:hover{
+    background:blueviolet;
+    transform: scale(1.1);
+}
+
+   
+#mobile{
+ display: none;
+ align-items: center;
+}
+#close{
+    display: none;
+}
+#hero{
+    background-image:url("images/banner.jpg" );
+    background-size: cover;
+    background-position: top 25% right 0%;
+    height:90vh;
+    width:87%;
+    padding:0 80px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position:relative;
+}
+#hero .newcoll h2{
+        font-size: 40px;
+        color: green;
+        padding: 0vh 40vh 55vh 53vh;
+}
+#hero h3{
+    padding-bottom:15px;
+    font-size:medium;
+}
+#hero h1{
+    color:brown;
+}
+#hero .shopbtn{
+    background-color: transparent;
+    color: white;
+    border: green;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 30px;
+    font-optical-sizing: auto;
+    text-align: center;
+    padding: 0vh 69vh;
+    justify-content: center;
+}
+#hero .shopbtn:hover{
+    background-color: black;
+    color: white;
+    border: green;
+    transform: scale(1.1);
+}
+    
+
+#feature{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+#feature .fe-box{
+    width:180px;
+    text-align:center;
+    padding:25px 15px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.2);
+    border: 1px solid #a4aba4;
+    border-radius: 4px;
+    margin: 15px ;
+}
+
+ #feature .fe-box img{
+    width:100%;
+    margin-bottom:10px;
+}
+
+#feature .fe-box h6{
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: rgb(17, 17, 17);
+    background-color: #fddde4;
+}
+#feature .fe-box:hover{
+    box-shadow:10px 10px 54px rgba(75, 73, 73, 0.3);
+} 
+#product1 h1{
+    text-align:center;
+    font-size:45px;
+    font-style:italic;
+
+}
+#product1 p{
+    text-align: center;
+    font-size: 15px;
+    color: #060606;
+    font-style: inherit;
+}
+#product1 .pro-container{
+    display:flex;
+    justify-content: space-between;
+    padding-top:20px;
+    flex-wrap:wrap
+}
+
+#product1 .pro{
+    width:23%;
+    max-width:200px;
+    padding: 10px 12px;
+    border:1px solid #e0e0e0;
+    border-radius: 25px;
+    cursor:pointer;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.2);
+    margin:15px 0;
+    transition:0.4s ease;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.6);
+
+}
+#product1 .pro img{
+    width:100%;
+    border-radius:20px;
+}
+#product1 .pro.des{
+    text-align:start;
+    padding:10px 0;
+
+}
+#product1 .pro.des span{
+    color: #f2eeee;
+    font-size: 15px;
+
+}
+#product1 .pro .des h5{
+    padding-top:7px;
+    color:#060606;
+    font-size:15px;
+}
+#product1 .pro .des i{
+    color:palevioletred ;
+    cursor:pointer;
+    text-decoration:none;
+    font-size: 15px;
+    font-weight: 100;
+    color:rgb(12, 13, 13);
+    transition:0.4s ease;
+    border-color: transparent;  
+    padding: 0px 1px;
+    background-color: transparent;
+    
+}
+#product1 .pro .des i:hover{
+    color:red;
+    transform: scale(1.2);
+}
+#product1 .pro .wishlist-btn i{
+    color:palevioletred ;
+    cursor:pointer;
+    text-decoration:none;
+    font-size: 20px;
+    font-weight: 100;
+    color:rgb(12, 13, 13);
+    transition:0.4s ease;
+    border-color: transparent;  
+    background-color: transparent;
+    position: relative;
+    right: 40px;
+    top: 10px;
+
+}
+#addToWishlistBtn{
+    color:palevioletred ;
+    cursor:pointer;
+    text-decoration:none;
+    font-size: 10px;
+    font-weight: 100;
+    color:rgb(12, 13, 13);
+    transition:0.4s ease;
+    border-color: transparent;  
+    background-color: transparent;
+    position: relative;
+    right: 20px;
+    top: 10px;
+}
+#addToWishlistBtn i{
+    color:palevioletred ;
+    cursor:pointer;
+    text-decoration:none;
+    font-size: 20px;
+    font-weight: 100;
+    color:rgb(12, 13, 13);
+    transition:0.4s ease;
+    border-color: transparent;  
+    background-color: transparent;
+    position: relative;
+    right: 90px;
+    top: 1px;
+}
+#shopNowBtn{
+    color:palevioletred ;
+    cursor:pointer;
+    text-decoration:none;
+    font-size: 10px;
+    font-weight: 100;
+    color:rgb(12, 13, 13);
+    transition:0.4s ease;
+    border-color: transparent;  
+    background-color: transparent;
+    position: relative;
+    left: 30px;  
+}
+#shopNowBtn:hover{
+    color:green;
+    border-radius: 80%;
+    background-color: greenyellow;
+    transform: scale(1.2);;
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size:15px;
+    font-weight:700;
+    color:black;
+}
+.section-m1{
+    margin: 40px 0;  
+}
+button.normal{
+    font-size:14px;
+    font-weight:600;
+    padding: 10px 20px;
+    color:#060606;
+    background-color: rgb(245, 245, 245);
+    border-radius: 4px;
+    cursor:pointer ;
+    border:0;
+    outline:0;
+    transition: 0.2s;
+}
+#Banner {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image:url("images/banner5.jpg");
+    width:100%;
+    height:40vh;
+    background-size: cover;
+
+}
+#Banner h3{
+    color:#642424;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px 0;
+}
+#Banner h1{
+    color: #981111;
+    font-size: 45px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+#Banner h1 span{
+    color: #120d0d;
+    font-size: 45px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+#Banner button:hover{
+    background-color: #111157;
+    color: #fcfbfb;
+}
+#Banner2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#Banner2 .Banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("images/Banner2.jpg");
+    min-width: 490px;
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+}
+#Banner2 .Banner-box2{
+    background-image: url("images/Banner4.png");
+    position:relative;
+}   
+
+.center-button-botton {
+    position: absolute;
+    bottom:70px ; /* Adjust the value as needed */
+    left: 38%;
+}
+#Banner2 h4{
+    color: #f2f2f2;
+    font-size: 20px;
+    font-weight: 300;
+}
+#Banner2 h3{
+    color: #f2f2f2;
+    font-size: 25px;
+    font-weight: 800;
+}
+#Banner2 span{
+    color: #f2f2f2;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 15px;
+}
+#Banner2 .Banner-box:hover button{
+    background: green;
+    border: 1px solid;
+}
+#Banner2 .Banner-box2:hover button{
+    background: orangered;
+    border: 1px solid;
+}
+#Banner3 .Banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("images/banner3.jpg");
+    min-width: 100px;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+}
+#Banner3 h4{
+    color: #030303;
+    font-size: 20px;
+    font-weight: 300;
+}
+#Banner3 h2{
+    color: black;
+    font-size: 28px;
+    font-weight: 800;
+}
+#Banner3 span{
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 15px;
+}
+#Banner3 .Banner-box:hover button{
+    background: gray;
+    border: 1px solid;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+  .footer-section {
+    flex: 1;
+    padding: 0 15px;
+}
+  .footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+}
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  .footer-section ul li {
+    margin-bottom: 10px;
+}
+  .footer-section ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+  .social-icons, .app-buttons {
+    display: flex;
+    gap: 10px;
+}
+  .social-icons img, .app-buttons img {
+    width: 24px;
+    height: 24px;
+}
+  .features {
+    text-align: center;
+    margin-top: 20px;
+}
+  .features .feature {
+    margin-bottom: 15px;
+}
+  .features .feature img {
+    width: 24px;
+    margin-right: 5px;
+}
+
+
+
+/* media query */
+
+@media (max-width:799px){
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start ;
+        position: fixed;
+        top: 0;
+        right: -300px; 
+        height: 100vh;
+        width: 300px;
+        background-color: #c3c9c3;
+        box-shadow: 0 40px 60px rgb(0,0,0,0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+    #navbar.active {
+        right: 0px; 
+
+    }
+    #navbar li {
+     margin-bottom: 25px;
+
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+       }
+    #mobile i {
+        color: #111157;
+        font-size: 20px;
+        padding-left: 20px ;
+       }
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: black;
+        font-size: 24px;
+    }  
+   
+    #lg-bag{
+        display: none;
+    }
+    #hero {
+        background-position: top 30% right 30%;
+        height: 70vh;
+        width: 102vh;
+        padding: 0 80px;
+        
+    }
+}
+
+/* shop page */
+
+#page-header{
+    background-image:url("images/Banner4.png"); 
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    }
+#page-header h2,
+#page-header p{
+    color: #f2f2f2;
+}
+
+#pagination{
+    text-align: center;
+}
+#pagination a{
+    text-decoration: none;
+    background-color: darkgreen;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+}
+#pagination a i{
+   font-size: 16px ;
+   font-weight: 600 ;
+}
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+#prodetails .single-pro-image{
+    width: 25%;
+    margin-right: 50px;
+}
+.small-img-grp{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.small-img-column{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+#prodetails{
+    flex-basis: 24%;
+    margin-top: 20px;
+}
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top:30px ;
+}
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+#prodetails .single-pro-details h2{
+font-size: 26px;
+}
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    transition:0.4s ease;
+    border-radius: 1vh;
+
+}
+#prodetails .single-pro-details select:hover{
+    background-color: #f2f2f2;
+    transform: scale(1);
+}
+#prodetails .single-pro-details input{
+    width: 40px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+#prodetails .single-pro-details button{
+    background: green;
+    color: white;
+}
+#prodetails .single-pro-details span {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+/* cart page */
+
+#page-header{
+    background-image:url("images/hero10.jpg"); 
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    }
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+#cart table img{
+   width: 70px;
+}
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}  
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}  
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}  
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 100px;
+    text-align: center;
+}   
+#cart table td:nth-child(5) input{
+    width: 40px;
+    height: 20px;
+    padding-left: 10px 5px 10px 15px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+#cart table thead{
+    border:1px solid black;
+    border-left: none;
+    border-right: none;
+}
+#cart table thead td{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+#cart table tbody tr td{
+    padding: 15px 0;
+}
+#cart table tbody td{
+   font-size: 13px;
+}
+#cart-add{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+#coupon{
+    width: 50%;
+    margin-bottom: 30px ;
+}
+#coupon h3,
+#Subtotal h3{
+    padding-bottom:15px ;
+}
+#coupon input{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#coupon button,
+#Subtotal button{
+    background-color: lightgreen;
+    color: black;
+    padding: 11px 20px;
+    transition:0.5s ease;
+}
+#coupon button:hover,
+#Subtotal button:hover{
+    background:rgb(6, 179, 6);
+    transform: scale(1.05);
+}
+#Subtotal {
+    width: 40%;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 10px;
+}
+#Subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#Subtotal table td{
+    width: 50%;
+    border: 0.5px solid black;
+    padding: 10px;
+    font-size: 13px;
+}

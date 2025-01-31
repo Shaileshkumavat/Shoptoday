@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men - My E-Commerce Website</title>
+    <link rel="stylesheet" href="men.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="e-commerce.html">Home</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="beauty.html">Beauty</a></li>
+                <li><a href="gift-cards.html">Gift Cards</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="men-collection">
+        <h1>Men's Collection</h1>
+        <p>Explore our stylish range of clothing and accessories for men.</p>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/men_shirt.jpg" alt="Men's Shirt">
+                <h2>Men's Shirt</h2>
+                <p>Price: $29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/men_pants.jpg" alt="Men's Pants">
+                <h2>Men's Pants</h2>
+                <p>Price: $39.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/men_shoes.jpg" alt="Men's Shoes">
+                <h2>Men's Shoes</h2>
+                <p>Price: $49.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/men_jacket.jpg" alt="Men's Jacket">
+                <h2>Men's Jacket</h2>
+                <p>Price: $89.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Order Confirmation</h2>
+            <p id="orderDetails"></p>
+            <button onclick="placeOrder()">Place Order</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My E-Commerce Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
